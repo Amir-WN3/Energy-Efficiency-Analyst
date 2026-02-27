@@ -22,9 +22,9 @@ def flatten_data(file_path):
             servizio_type = servizio.get('servizio_energetico', 'placeholder')
             prefix = f"servizio_{servizio_type}"
             
-            result[f'{prefix}_epren'] = servizio.get('epren', 0) or 0
-            result[f'{prefix}_epnren'] = servizio.get('epnren', 0) or 0
-            result[f'{prefix}_efficienza'] = servizio.get('efficienza_media_stagionale', 0) or 0
+            result[f'{prefix}_epren'] = servizio.get('epren', 0)
+            result[f'{prefix}_epnren'] = servizio.get('epnren', 0)
+            result[f'{prefix}_efficienza'] = servizio.get('efficienza_media_stagionale', 0)
             imp_sim = servizio.get('impianto_simulato') or ''
             result[f'{prefix}_simulato'] = 1 if 'SIMULATO' in imp_sim else 0
             
