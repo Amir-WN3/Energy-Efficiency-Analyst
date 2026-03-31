@@ -210,4 +210,4 @@ __marimo__/
 
 # Other
 raw/
-scripts/__pycache__/
+processors/__pycache__

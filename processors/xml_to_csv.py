@@ -263,7 +263,7 @@ def process_all_xml_files(xml_file_path, output_csv = 'ape_dataset_marche.csv'):
 if __name__ == "__main__":
     
     XML_FOLDER = 'C:\\Users\\AmirN\\Desktop\\APEdata\\APExml'
-    OUTPUT_CSV = "C:\\Users\\AmirN\Desktop\\projects\\Energy-Efficiency-Analyst\\data\\raw\\ape_marche_dataset.csv"
+    OUTPUT_CSV = "C:\\Users\\AmirN\\Desktop\\projects\\Energy-Efficiency-Analyst\\data\\raw\\ape_marche_dataset.csv"
     
     print('Converting...')
     
