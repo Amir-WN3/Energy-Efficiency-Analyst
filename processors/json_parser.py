@@ -26,8 +26,8 @@ def flatten_data(file_path):
             result[f'{prefix}_epren'] = servizio.get('epren', 0)
             result[f'{prefix}_epnren'] = servizio.get('epnren', 0)
             result[f'{prefix}_efficienza'] = servizio.get('efficienza_media_stagionale', 0)
-            imp_sim = servizio.get('impianto_simulato') or ''
-            result[f'{prefix}_simulato'] = 1 if 'SIMULATO' in imp_sim else 0
+            imp_sim = servizio.get('impianto_simulato')
+            result[f'{prefix}_simulato'] = int(bool(imp_sim and str(imp_sim).strip()))
             
         return pd.Series(result)
     
